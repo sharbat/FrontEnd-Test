@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"></html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style1.css">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <script src="https://kit.fontawesome.com/bf7801ff90.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task</title>
+    </head>
+    <header>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <img src="assets\Triangle.png" id="logoo">
+          <label class="logo">penrose</label>
+          <ul>
+            <li><a class="active"  href="#">HOME</a></li>
+            <li><a href="#">NEW COLLECTIONS</a></li>
+            <li><a href="#">STORE <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown_menu">
+                <ul>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Kids</a></li>
+                </ul>
+            </div>
+            
+            </li>
+            <li><a href="#">CONTACTS</a></li>
+          </ul>
+        </nav>
+        <section></section>
+    </header>
+    <body >
+      
+      <section class="wrapper">
+        <div class="shadow"></div>
+        <div class="triangleGlow"></div>
+        <div class="triangle"></div>
+        <div class="title"></div>
+        <div class="slider" id="slider">
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+               
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                   
+                    <p>Always remember that you are absolutely unique. Just like everyone else.</p>
+                    <p>Margaret Mead</p>
+                   
+                  </div>
+                </div>
+              </div>
+             
+             
+              <div class="carousel-item">
+                
+                <div class="container">
+                  <div class="carousel-caption">
+                    
+                    <p>Life is what happens when you're busy making other plans.</p>
+                    <p>John Lennon</p>
+                    
+
+                  </div>
+                </div>
+              </div>
+            
+              <div class="carousel-item">
+               
+                <div class="container">
+                  <div class="carousel-caption text-end">
+                    
+                    <p>The way to get started is to quit talking and begin doing.</p>
+                    <p>Walt Disney</p>
+                
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      
+        <div class="model"></div>
+        <div class="video">
+           <!-- video thumbnail -->
+           <div class="thumbnail">
+            <img class="video-thumbnail" src="assets/video-thumbnail.png" alt="Video thumbnail click here" />
+           </div>
+   
+
+    <!-- video player -->
+    <div class="player">
+      <video src="assets/video1.mp4" controls></video>
+      <span class="close-button">Close</span>
+    </div>
+        </div>
+       
+      </section>
+      <script src="script.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      
+      <style type="text/css">
+        body { background: #282727 !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+     </style>
+    </body>
+   
+</html>

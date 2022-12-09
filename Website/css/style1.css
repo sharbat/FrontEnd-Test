@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  nav{
+    background: transparent linear-gradient(180deg, #000000 0%, #000000C6 40%, #0000002C 82%, #00000000 100%) 0% 0% no-repeat padding-box;
+  
+    
+    height: 80px;
+    width: 100%;
+  }
+  body{
+   
+    background: #282727 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+#logoo{
+  /* Layout Properties */
+  top: 51px;
+  left: 70px;
+  width: 67px;
+  height: 66px;
+  /* UI Properties */
+  background: transparent linear-gradient(112deg, #3899FA 0%, #6E0D9A 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+  .logo{
+    top: 50px;
+    left: 168px;
+    width: 223px;
+    height: 80px;
+   
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 600 64px/80px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #C445F4;
+    opacity: 1;
+    
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+   
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    position: relative;
+    
+
+  }
+  nav ul li a{
+    left: 896px;
+   width: 161px;
+   height: 23px;
+   top:0px;
+   /* UI Properties */
+   text-align: left;
+    font: normal normal 600 18px/23px Source Sans Pro;
+    letter-spacing: 0.9px;
+    color: #b338e0;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 1;
+    font-size: 17px;
+    border-radius: 8px;
+    
+    padding: 13px 13px;
+  }
+ 
+.active{
+    /* Layout Properties */
+    top: 0px;
+    left: 814px;
+    width: 50px;
+    height: 23px;
+  /* UI Properties */
+   text-align: left;
+   font: normal normal 600 18px/23px Source Sans Pro;
+   letter-spacing: 0.9px;
+   color: #EECAFC;
+   text-transform: uppercase;
+   opacity: 1;
+ }
+ ul li:not(:first-child) a:hover {
+   
+    background-color: #7e1a86;
+    transition: .5s;
+    
+  }
+  ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 100%;
+    background-color: #ffffff;
+
+}
+.dropdown_menu ul{
+    display: block;
+    margin: 0px;
+}
+.dropdown_menu{
+    display: none;
+}
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(31, 35, 35);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      .dropdown_menu ul{
+        display: block;
+        margin: 10px;
+    }
+    nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #7e1a86;
+  }
+  
+  #check:checked ~ ul{
+    left: 0;
+  }
+  section{
+    
+    height: calc(100vh - 80px);
+  }
+}
+
+
+
+.wrapper {
+  position: relative;
+ 
+  
+}
+.shadow{
+  position: relative;
+  z-index: 1;
+  background:  transparent url('../assets/Shadow.png') 0% 0% no-repeat padding-box;;
+  top: 20px;
+  left: 360px;
+  width: 878px;
+  height: 758px;
+  /* UI Properties */
+  opacity: 1;
+  box-shadow: none;
+}
+
+.triangleGlow{
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  left: 369px;
+  width: 1000px;
+  height: 580px;
+  background:transparent url('../assets/TriangleGlow.png') 0% 0% no-repeat padding-box;;
+  opacity: 1;
+}
+.triangle{
+  position: absolute;
+  z-index: 3;
+  top: 150px;
+  left: 425px;
+  width: 1000px;
+  height: 589px;
+  background:transparent url('../assets/Triangle.png') 0% 0% no-repeat padding-box;;
+  opacity: 0.3;
+}
+.title{
+  /* Layout Properties */
+  position: absolute;
+  z-index: 4;
+  top: 80px;
+  left: 168px;
+  width: 400px;
+  height: 450px;
+  /* UI Properties */
+  background:transparent  url('../assets/Title.png')0% 0% no-repeat padding-box;;
+  opacity: 1;
+  padding: auto;
+}
+
+
+.model{
+  position: absolute;
+  z-index: 6;
+  top: -50px;
+  left: 400px;
+  width: 520px;
+  height: 958px;
+  /* UI Properties */
+  background: transparent url('../assets/Model@2x.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.video{
+  position:absolute;
+  z-index: 7;
+  top: 540px;
+  left: 156px;
+  width: 165px;
+  height: 120px;
+  background: transparent linear-gradient(112deg,  #3899FA 0%, #6E0D9A 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+ /* styles for the video player */
+ .player {
+  display: none; /* hidden by default */
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 640px;
+  height: 360px;
+  background-color: #333;
+}
+
+/* styles for the video */
+.player video {
+  width: 100%;
+  height: 100%;
+}
+
+/* styles for the close button */
+.player .close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* styles for the video thumbnail */
+.thumbnail{
+  position: flex;
+  justify-content: center; 
+
+}
+
+.video-thumbnail {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  
+}
+
+  
+#myCarousel{
+  background-color: transparent;
+}
+
+.slider{
+
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  background-color: transparent ;
+  z-index: 20;
+  right: 30px;
+  top: 200px;
+}
+#slider::after{
+  content: "“";
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  z-index: 25;
+  color: #b338e0;
+  font-size: 3rem;
+}
+
+.carousel-item.active{
+  left: 0px;
+  height: 2 00px;
+}
+
+.carousel-item{
+  left: 0px;
+  height: 200px;
+  font-size: 1rem;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+   letter-spacing: 0.9px;
+   text-transform: none;
+
+ 
+}
+
+
+
